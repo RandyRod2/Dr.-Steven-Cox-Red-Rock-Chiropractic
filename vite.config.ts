@@ -5,13 +5,11 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
-  return {
-    base: '/Dr.-Steven-Cox-Red-Rock-Chiropractic/',
-
-    server: {
-      port: 3000,
-      host: '0.0.0.0',
-    },
+    return {
+      server: {
+        port: 3000,
+        host: '0.0.0.0',
+      },
       plugins: [
         react(),
         tailwindcss()
